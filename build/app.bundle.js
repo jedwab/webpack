@@ -67,7 +67,7 @@
 /* 0 */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed: SyntaxError: C:/kodilla/webpack/src/index.js: Unexpected token (9:4)\n\n   7 | \n   8 | ReactDOM.render(\n>  9 |     <App />,\n     |     ^\n  10 |     document.getElementById('app')\n  11 | );\n");
+throw new Error("Module build failed: SyntaxError: C:/kodilla/webpack/src/index.js: Unexpected token (8:4)\n\n   6 | \n   7 | ReactDOM.render(\n>  8 |     <App />,\n     |     ^\n   9 |     document.getElementById('app')\n  10 | );\n");
 
 /***/ })
 /******/ ]);
