@@ -1,27 +1,15 @@
 import React from 'react';
 import uuid from 'uuid';
 import style from './App.css';
-import Title from './components/Title.js';
+import Title from './Title.js';
 
 
 class App extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            data: [
-                {
-                    id: 1,
-                    text: 'clean room'
-                }, 
-                {
-                    id: 2,
-                    text: 'wash the dishes'
-                }, 
-                {
-                    id: 3,
-                    text: 'feed my cat'
-                }
-            ]
+            data: []
+            
         };
     }
     addTodo(val){
@@ -32,19 +20,19 @@ class App extends React.Component {
         const data = [...this.state.data, todo];
         this.setState({data});
     }
-};
 
-removeTodo(id) {
-    const remainder = this.state.data.filter(todo => todo.id !== id);
-    this.setState({data: remainder});
-}
+    removeTodo(id) {
+        const remainder = this.state.data.filter(todo => todo.id !== id);
+        this.setState({data: remainder});
+    }
 
-render() {
-    return (
-        <div className={style.TodoApp}>
-            Tutaj pojawią się komponenty naszej aplikacji.
-        </div>
-    );
+    render() {
+        return (
+            <div className={style.TodoApp}>
+                Tutaj pojawią się komponenty naszej aplikacji.
+            </div>
+        );
+    }
 }
 
 export default App;
