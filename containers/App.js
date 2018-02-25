@@ -1,7 +1,7 @@
 import React from 'react';
 import uuid from 'uuid';
-import style from './App.css';
-import Title from '..components/Title.js';
+import style from './src/App.css';
+import Title from './Title.js';
 
 
 class App extends React.Component {
