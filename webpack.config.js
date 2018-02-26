@@ -31,15 +31,18 @@ module.exports = {
             }
         ]
     },
+    resolve: {
+        extensions: ['.js']
+    },
     plugins: [
-    new HtmlWebpackPlugin({
-        emplate: 'src/index.html',
-        filename: 'index.html',
-        inject: 'body'
+        new HtmlWebpackPlugin({
+            template: 'src/index.html',
+            filename: 'index.html',
+            inject: 'body'
         }),
-    new webpack.optimize.UglifyJsPlugin(),
-    new OptimizeJsPlugin({
-        sourceMap: false
+        new webpack.optimize.UglifyJsPlugin(),
+        new OptimizeJsPlugin({
+            sourceMap: false
         })
     ]
 };
