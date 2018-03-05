@@ -38,13 +38,24 @@ class App extends React.Component {
         this.setState({data: remainder});
     }
 
+    // e -> event zainstniały na input
+    handleKeyUp(e) {
+        // 13 - ENTER
+        const value = e.target.value;
+
+        if (e.keyCode === 13 && value) {
+            this.addTodo(e.target.value);
+            e.target.value = '';
+        }
+    }
+
     render() {
         return (
             <div className={style.TodoApp}>
                 <Title qty={this.state.data.length} />
                 <TodoList qtydata={this.state.data} remove={this.removeTodo.bind(this)}/>
 
-            <TodoForm add={this.addTodo} />
+                <TodoForm handleKeyUp={this.handleKeyUp.bind(this)} />
             </div>
         );
     }
