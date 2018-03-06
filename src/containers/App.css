@@ -1,12 +1,28 @@
+body {
+    background-image: url("https://images.unsplash.com/photo-1513384312027-9fa69a360337?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6cd6bb3597eab032bd6d76d59a02720c&auto=format&fit=crop&w=1051&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
 .TodoApp {
-    background-color: green;
-    color: #222;
+    color: #fff;
+    background-color: rgba(000, 000,000,0.2);
+    border: 4px solid rgba(000, 000,000,0.5);
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     align-content: center;
-    width: 100vw;
-    height: 100vh;
+    margin-top: 50px;
+    padding: 30px 0;
+    font-size: 20px;
+}
+input {
+    padding: 2vh;
+    margin: 0 10px;
+}
+button {
+    margin-left: 10px;
+    color: black;
 }
